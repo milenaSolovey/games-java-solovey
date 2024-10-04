@@ -43,8 +43,8 @@ button {
 <input type="number" id="userInput" placeholder="Введите ваше число" min="1" max="100">
 <button id="submitBtn" onclick="Guess()">Угадать</button>
 
-
-
+<div id="output"></div>
+<div id="attempts"></div>
 
 <div id="output"></div>
 
@@ -60,10 +60,11 @@ const maxAttempts = 10; // Количество максимальных поп�
 
 
 
-function Guess() {
-  const outputDiv = document.getElementById('output');
-const inputField = document.getElementById('userInput');
-const submitButton = document.getElementById('submitBtn');
+    function Guess() {
+      const outputDiv = document.getElementById('output');
+      const attemptsDiv = document.getElementById('attempts');
+      const inputField = document.getElementById('userInput');
+      const submitButton = document.getElementById('submitBtn');
 
 
 
